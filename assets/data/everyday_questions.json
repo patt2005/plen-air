@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "The Louvre is the most visited museum in the world.",
+            "answer": true
+        },
+        {
+            "question": "The Eiffel Tower was originally designed as a temporary structure.",
+            "answer": true
+        },
+        {
+            "question": "Saint-Malo is a famous seaside resort on the French Riviera.",
+            "answer": false
+        },
+        {
+            "question": "Notre-Dame Cathedral in Paris was completed in the 14th century.",
+            "answer": true
+        },
+        {
+            "question": "Champagne can only be called 'champagne' if it is produced in the Champagne region.",
+            "answer": true
+        },
+        {
+            "question": "Mont-Saint-Michel is a mountain located in the south of France.",
+            "answer": false
+        },
+        {
+            "question": "Disneyland Paris is the largest Disneyland in the world.",
+            "answer": false
+        },
+        {
+            "question": "France produces more than 300 varieties of cheese.",
+            "answer": true
+        },
+        {
+            "question": "The French Riviera is also known as the Côte d'Azur.",
+            "answer": true
+        },
+        {
+            "question": "The city of Lyon is famous for its culinary tradition.",
+            "answer": true
+        },
+        {
+            "question": "Cannes is known for its music festivals.",
+            "answer": false
+        },
+        {
+            "question": "Marseille is the largest port in France.",
+            "answer": true
+        },
+        {
+            "question": "Toulouse is known as the 'Pink City' because of the color of its buildings.",
+            "answer": true
+        },
+        {
+            "question": "France shares its borders with nine countries.",
+            "answer": false
+        },
+        {
+            "question": "The Loire is the longest river in France.",
+            "answer": true
+        },
+        {
+            "question": "Grasse is the world capital of perfume.",
+            "answer": true
+        },
+        {
+            "question": "The Château de Chenonceau is located in the Seine Valley.",
+            "answer": false
+        },
+        {
+            "question": "France is the third largest country in Europe by area.",
+            "answer": false
+        },
+        {
+            "question": "The croissant is a traditional French pastry that was invented in Vienna.",
+            "answer": true
+        },
+        {
+            "question": "The Château de Versailles is famous for its gardens and palace.",
+            "answer": true
+        }
+    ]
+}

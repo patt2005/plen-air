@@ -1,0 +1,924 @@
+{
+    "questions": {
+        "Mont-Saint-Michel": [
+            {
+                "question": "What is the name of the famous abbey located at Mont-Saint-Michel?",
+                "options": {
+                    "A": "Abbey of Mont-Saint-Michel",
+                    "B": "Abbey of Cluny",
+                    "C": "Abbey of Saint-Denis"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main mode of transportation to access Mont-Saint-Michel?",
+                "options": {
+                    "A": "Airplane",
+                    "B": "Train",
+                    "C": "Shuttle bus or car"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the spectacular natural event that occurs around Mont-Saint-Michel?",
+                "options": {
+                    "A": "The tides",
+                    "B": "Snowstorms",
+                    "C": "Volcanic eruptions"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main architectural style of the Mont-Saint-Michel Abbey?",
+                "options": {
+                    "A": "Gothic",
+                    "B": "Renaissance",
+                    "C": "Baroque"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the bay where Mont-Saint-Michel is located?",
+                "options": {
+                    "A": "Seine Bay",
+                    "B": "Mont-Saint-Michel Bay",
+                    "C": "Somme Bay"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the famous pilgrim guide who visited Mont-Saint-Michel?",
+                "options": {
+                    "A": "Saint Michael",
+                    "B": "William the Conqueror",
+                    "C": "Saint Aubert"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous culinary masterpiece associated with Mont-Saint-Michel?",
+                "options": {
+                    "A": "Buckwheat crepes",
+                    "B": "Mère Poulard's omelette",
+                    "C": "Fish soup"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What type of tide can isolate Mont-Saint-Michel from the mainland?",
+                "options": {
+                    "A": "High tide",
+                    "B": "Low tide",
+                    "C": "Medium tide"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the fort built to protect Mont-Saint-Michel?",
+                "options": {
+                    "A": "Fort Boulogne",
+                    "B": "Fort Saint-Nicolas",
+                    "C": "Fort La Roche"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the medieval pilgrimage route that passes through Mont-Saint-Michel?",
+                "options": {
+                    "A": "Way of Saint James",
+                    "B": "Way of Saint Augustine",
+                    "C": "Way of Saint Benedict"
+                },
+                "answer": "A"
+            }
+        ],
+        "Massif du Vaucluse": [
+            {
+                "question": "What is the highest peak in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Mont Ventoux",
+                    "B": "Mont Sainte-Victoire",
+                    "C": "Mont de Vaucluse"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main outdoor activity in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Skiing",
+                    "B": "Climbing",
+                    "C": "Hiking"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous music festival held in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Avignon Festival",
+                    "B": "Mont Ventoux Music Festival",
+                    "C": "Film Festival"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "Which city is famous for its markets in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Orange",
+                    "B": "Avignon",
+                    "C": "Carpentras"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the regional natural park located in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Luberon Regional Natural Park",
+                    "B": "Alpilles Regional Natural Park",
+                    "C": "Mont Ventoux Regional Natural Park"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the river that flows through the Massif du Vaucluse?",
+                "options": {
+                    "A": "The Durance",
+                    "B": "The Rhône",
+                    "C": "The Sorgue"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous medieval castle located in the Massif du Vaucluse?",
+                "options": {
+                    "A": "Château de Chenonceau",
+                    "B": "Château de Saumane",
+                    "C": "Château des Papes"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the popular hiking trails around Mont Ventoux?",
+                "options": {
+                    "A": "Bories Trails",
+                    "B": "Vaucluse Trails",
+                    "C": "Mont Ventoux Trails"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the typical culinary specialty of the Massif du Vaucluse?",
+                "options": {
+                    "A": "Bouillabaisse",
+                    "B": "Ratatouille",
+                    "C": "Caillette"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the astronomical observatory located at the summit of Mont Ventoux?",
+                "options": {
+                    "A": "Haute-Provence Observatory",
+                    "B": "Mont Ventoux Observatory",
+                    "C": "Pic du Midi Observatory"
+                },
+                "answer": "B"
+            }
+        ],
+        "Lavender Fields of Provence": [
+            {
+                "question": "What time of year are the lavender fields in Provence in full bloom?",
+                "options": {
+                    "A": "Summer",
+                    "B": "Spring",
+                    "C": "Autumn"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main product made from lavender in Provence?",
+                "options": {
+                    "A": "Honey",
+                    "B": "Essential oil",
+                    "C": "Wine"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the lavender festival held in Provence?",
+                "options": {
+                    "A": "Lavender Festival",
+                    "B": "Lavender Fair",
+                    "C": "Flower Festival"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the town in Provence famous for its lavender fields?",
+                "options": {
+                    "A": "Avignon",
+                    "B": "Gordes",
+                    "C": "Sault"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the dominant color of the lavender fields in Provence?",
+                "options": {
+                    "A": "Yellow",
+                    "B": "Blue-violet",
+                    "C": "Red"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the herb used in Provence for its relaxing and aromatic properties?",
+                "options": {
+                    "A": "Sage",
+                    "B": "Lavender",
+                    "C": "Mint"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the essential oil derived from lavender?",
+                "options": {
+                    "A": "Rosemary oil",
+                    "B": "Lavender oil",
+                    "C": "Lemon oil"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the traditional method of harvesting lavender in Provence?",
+                "options": {
+                    "A": "By scythe",
+                    "B": "By hand",
+                    "C": "By machine"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the plateau in Provence known for its vast lavender fields?",
+                "options": {
+                    "A": "Valensole Plateau",
+                    "B": "Mountain Plateau",
+                    "C": "Alpine Plateau"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which part of the lavender plant is generally used for essential oil extraction?",
+                "options": {
+                    "A": "Roots",
+                    "B": "Leaves",
+                    "C": "Flowers"
+                },
+                "answer": "C"
+            }
+        ],
+        "Loire Valley": [
+            {
+                "question": "What is the name of the famous castle located in the Loire Valley?",
+                "options": {
+                    "A": "Château de Chenonceau",
+                    "B": "Château de Versailles",
+                    "C": "Château de Chambord"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main wine produced in the Loire Valley?",
+                "options": {
+                    "A": "Bordeaux",
+                    "B": "Champagne",
+                    "C": "Loire wines"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the river that flows through the Loire Valley?",
+                "options": {
+                    "A": "The Seine",
+                    "B": "The Rhône",
+                    "C": "The Loire"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the predominant architectural style in the castles of the Loire Valley?",
+                "options": {
+                    "A": "Gothic",
+                    "B": "Renaissance",
+                    "C": "Baroque"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the city that is the administrative center of the Loire Valley?",
+                "options": {
+                    "A": "Tours",
+                    "B": "Nantes",
+                    "C": "Angers"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which castle in the Loire Valley is famous for its gardens?",
+                "options": {
+                    "A": "Château de Blois",
+                    "B": "Château de Chaumont-sur-Loire",
+                    "C": "Château de Villandry"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous garden festival held in the Loire Valley?",
+                "options": {
+                    "A": "Chaumont Garden Festival",
+                    "B": "Tours Flower Festival",
+                    "C": "Blois Garden Festival"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous artistic masterpiece found in the castles of the Loire Valley?",
+                "options": {
+                    "A": "Mona Lisa",
+                    "B": "The Virgin of the Rocks",
+                    "C": "The Lady and the Unicorn"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous tourist route that runs through the Loire Valley?",
+                "options": {
+                    "A": "Castle Route",
+                    "B": "Wine Route",
+                    "C": "Perfume Route"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the typical cuisine found in the Loire Valley?",
+                "options": {
+                    "A": "Mediterranean cuisine",
+                    "B": "Normandy cuisine",
+                    "C": "Valley cuisine"
+                },
+                "answer": "C"
+            }
+        ],
+        "Côte d'Azur": [
+            {
+                "question": "What is the name of the famous seaside city located on the Côte d'Azur?",
+                "options": {
+                    "A": "Nice",
+                    "B": "Lyon",
+                    "C": "Bordeaux"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the renowned film festival held annually on the Côte d'Azur?",
+                "options": {
+                    "A": "Cannes Film Festival",
+                    "B": "Lyon Film Festival",
+                    "C": "Paris Film Festival"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main tourist attraction in the city of Nice?",
+                "options": {
+                    "A": "Promenade des Anglais",
+                    "B": "Mont Boron",
+                    "C": "Congress Palace"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous luxury port located on the Côte d'Azur?",
+                "options": {
+                    "A": "Port of Nice",
+                    "B": "Port of Cannes",
+                    "C": "Port of Monaco"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous sandy beach in Cannes?",
+                "options": {
+                    "A": "La Croisette Beach",
+                    "B": "Pampelonne Beach",
+                    "C": "Paloma Beach"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous rock by the sea in Monaco?",
+                "options": {
+                    "A": "Old Town Rock",
+                    "B": "Rock of Monaco",
+                    "C": "Croisette Rock"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the national park located east of the Côte d'Azur?",
+                "options": {
+                    "A": "Mercantour National Park",
+                    "B": "Calanques National Park",
+                    "C": "Luberon National Park"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous villa of writer Scott Fitzgerald in Cannes?",
+                "options": {
+                    "A": "Villa Rothschild",
+                    "B": "Villa Ephrussi de Rothschild",
+                    "C": "Villa America"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous jazz festival held annually in Nice?",
+                "options": {
+                    "A": "Nice Jazz Festival",
+                    "B": "Monaco Jazz Festival",
+                    "C": "Antibes Jazz Festival"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the typical dish from the Côte d'Azur made from chickpea flour?",
+                "options": {
+                    "A": "Socca",
+                    "B": "Ratatouille",
+                    "C": "Bouillabaisse"
+                },
+                "answer": "A"
+            }
+        ],
+        "Chamonix-Mont-Blanc": [
+            {
+                "question": "What is the name of the highest peak in the French Alps located in Chamonix?",
+                "options": {
+                    "A": "Mont Blanc",
+                    "B": "Matterhorn",
+                    "C": "Monte Rosa"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous cable car that goes to the summit of the Aiguille du Midi?",
+                "options": {
+                    "A": "Mont Blanc Cable Car",
+                    "B": "Aiguille du Midi Cable Car",
+                    "C": "Aguille Verte Cable Car"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the most famous glacier near Chamonix?",
+                "options": {
+                    "A": "Mer de Glace Glacier",
+                    "B": "Argentière Glacier",
+                    "C": "Tacul Glacier"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the main winter sport practiced in Chamonix?",
+                "options": {
+                    "A": "Skiing",
+                    "B": "Surfing",
+                    "C": "Figure Skating"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous mountain race held in Chamonix?",
+                "options": {
+                    "A": "Ultra-Trail du Mont-Blanc",
+                    "B": "Mont-Blanc Marathon",
+                    "C": "Trail of the Alps"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the natural park located around Chamonix?",
+                "options": {
+                    "A": "Ecrins National Park",
+                    "B": "Vanoise National Park",
+                    "C": "Mont-Blanc National Park"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the nearby town known for its winter sports close to Chamonix?",
+                "options": {
+                    "A": "Annecy",
+                    "B": "Geneva",
+                    "C": "Megève"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous climbing site located near Chamonix?",
+                "options": {
+                    "A": "Les Drus",
+                    "B": "The Aiguilles of Chamonix",
+                    "C": "Grand Paradis"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the famous mountain located near Chamonix?",
+                "options": {
+                    "A": "Mont Joly",
+                    "B": "Mont Buet",
+                    "C": "Mont Blanc"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous lake located at the foot of Mont Blanc?",
+                "options": {
+                    "A": "Lake Tignes",
+                    "B": "Lake Passy",
+                    "C": "Lake Chamonix"
+                },
+                "answer": "C"
+            }
+        ],
+        "Brittany": [
+            {
+                "question": "What is the name of the famous alignment of standing stones located in Brittany?",
+                "options": {
+                    "A": "Carnac",
+                    "B": "Stonehenge",
+                    "C": "Avebury"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the iconic culinary specialty of Brittany?",
+                "options": {
+                    "A": "Crêpes",
+                    "B": "Bouillabaisse",
+                    "C": "Cassoulet"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the maritime festival held in Brittany?",
+                "options": {
+                    "A": "Vieilles Charrues Festival",
+                    "B": "Sea Festival",
+                    "C": "Brittany Festival"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the famous castle located in Brittany?",
+                "options": {
+                    "A": "Château de Chambord",
+                    "B": "Château de Fougères",
+                    "C": "Château de Chenonceau"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the Breton city known for its fishing port?",
+                "options": {
+                    "A": "Brest",
+                    "B": "Rennes",
+                    "C": "Quimper"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous gulf located in Brittany?",
+                "options": {
+                    "A": "Gulf of Morbihan",
+                    "B": "Gulf of Saint-Malo",
+                    "C": "Gulf of Bénodet"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous alignment of megaliths located in Brittany?",
+                "options": {
+                    "A": "Menec Alignment",
+                    "B": "Kermario Alignment",
+                    "C": "Carnac Alignment"
+                },
+                "answer": "C"
+            },
+            {
+                "question": "What is the name of the famous Breton island known for its spectacular landscapes?",
+                "options": {
+                    "A": "Île de Ré",
+                    "B": "Île d'Ouessant",
+                    "C": "Île de Noirmoutier"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the Breton coastal region famous for its cliffs?",
+                "options": {
+                    "A": "Emerald Coast",
+                    "B": "Pink Granite Coast",
+                    "C": "Jade Coast"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous menhir located in Brittany?",
+                "options": {
+                    "A": "Plouharnel Menhir",
+                    "B": "Kerloas Menhir",
+                    "C": "L'Erdeven Menhir"
+                },
+                "answer": "B"
+            }
+        ],
+        "Corsica": [
+            {
+                "question": "What is the highest peak in Corsica?",
+                "options": {
+                    "A": "Monte Cinto",
+                    "B": "Monte Rotondo",
+                    "C": "Monte San Pellegrino"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the coastal town famous for its beaches in Corsica?",
+                "options": {
+                    "A": "Ajaccio",
+                    "B": "Bastia",
+                    "C": "Calvi"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous hiking trail crossing Corsica?",
+                "options": {
+                    "A": "GR20 Trail",
+                    "B": "Customs Officers' Trail",
+                    "C": "Côte d'Azur Trail"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous Corsican cheese produced in the mountains?",
+                "options": {
+                    "A": "Roquefort",
+                    "B": "Brocciu",
+                    "C": "Comté"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the traditional music festival held in Corsica?",
+                "options": {
+                    "A": "Accordion Festival",
+                    "B": "Cantu Festival",
+                    "C": "Song Festival"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the name of the famous white sand beach in Corsica?",
+                "options": {
+                    "A": "Palombaggia Beach",
+                    "B": "Saline Beach",
+                    "C": "Santa Giulia Beach"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the predominant architectural style in Corsican churches and cathedrals?",
+                "options": {
+                    "A": "Romanesque and Gothic",
+                    "B": "Renaissance",
+                    "C": "Baroque"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the island off the Corsican coast that is a wildlife sanctuary?",
+                "options": {
+                    "A": "Île-Rousse",
+                    "B": "Île-Rusci",
+                    "C": "Île-Cavallo"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What traditional Corsican drink is often paired with meat dishes?",
+                "options": {
+                    "A": "Calvados",
+                    "B": "Corsican Wine",
+                    "C": "Chestnut Liqueur"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the popular festival in Corsica celebrating local culture and traditions?",
+                "options": {
+                    "A": "Music Festival",
+                    "B": "Local Cuisine Festival",
+                    "C": "Arts Festival"
+                },
+                "answer": "B"
+            }
+        ],
+        "Provence": [
+            {
+                "question": "Which famous city in Provence is known for its lively markets?",
+                "options": {
+                    "A": "Avignon",
+                    "B": "Aix-en-Provence",
+                    "C": "Marseille"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "What is the main type of lavender cultivated in Provence?",
+                "options": {
+                    "A": "Fine Lavender",
+                    "B": "Wild Lavender",
+                    "C": "Aspic Lavender"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous festival that takes place in Avignon each summer?",
+                "options": {
+                    "A": "Avignon Festival",
+                    "B": "Lavender Festival",
+                    "C": "Wine Festival"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the name of the famous Roman amphitheater in Nîmes?",
+                "options": {
+                    "A": "Arènes de Nîmes",
+                    "B": "Arènes d'Arles",
+                    "C": "Arènes de Marseille"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which natural park is located in Provence?",
+                "options": {
+                    "A": "Luberon Regional Natural Park",
+                    "B": "Vanille Natural Park",
+                    "C": "Verdon Natural Park"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which river flows through Provence and is a popular tourist destination?",
+                "options": {
+                    "A": "Rhône",
+                    "B": "Dordogne",
+                    "C": "Loire"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which picturesque village situated on a hill in Provence is known for its narrow streets and white houses?",
+                "options": {
+                    "A": "Gordes",
+                    "B": "Saint-Rémy",
+                    "C": "Lourmarin"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What French culinary product is often associated with Provence and includes a blend of herbs?",
+                "options": {
+                    "A": "Herbes de Provence",
+                    "B": "Foie Gras",
+                    "C": "Cassoulet"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which art museum is located in Arles, Provence?",
+                "options": {
+                    "A": "Van Gogh Museum",
+                    "B": "Louvre Museum",
+                    "C": "Orsay Museum"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What festival, dedicated to the arts, takes place in Avignon each summer?",
+                "options": {
+                    "A": "Theater and Performance Festival",
+                    "B": "Music Festival",
+                    "C": "Wine Festival"
+                },
+                "answer": "A"
+            }
+        ],
+        "Alps": [
+            {
+                "question": "What is the most famous ski resort in the Alps?",
+                "options": {
+                    "A": "Chamonix",
+                    "B": "Les Arcs",
+                    "C": "Val d'Isère"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which lake in the Alps is known for its crystal-clear waters?",
+                "options": {
+                    "A": "Lake Annecy",
+                    "B": "Lake Geneva",
+                    "C": "Lake Maggiore"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "What is the highest Alpine peak in Europe?",
+                "options": {
+                    "A": "Mont Blanc",
+                    "B": "Matterhorn",
+                    "C": "Eiger"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which ski resort in the Alps has a glacier at over 3,000 meters altitude?",
+                "options": {
+                    "A": "Tignes",
+                    "B": "Zermatt",
+                    "C": "Alpe d'Huez"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which Alpine resort is famous for its thermal springs and spa treatments?",
+                "options": {
+                    "A": "Chamonix",
+                    "B": "Aix-les-Bains",
+                    "C": "Sestrière"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "Which Alpine lake is located in Savoie and is popular with tourists?",
+                "options": {
+                    "A": "Lake Bourget",
+                    "B": "Lake Champlon",
+                    "C": "Lake Suze"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "Which Alpine pass connects France to Italy?",
+                "options": {
+                    "A": "Col de la Bonette",
+                    "B": "Col du Petit Saint-Bernard",
+                    "C": "Col du Grand-Saint-Bernard"
+                },
+                "answer": "B"
+            },
+            {
+                "question": "Which Alpine city is known for its festivals and cultural events?",
+                "options": {
+                    "A": "Grenoble",
+                    "B": "Lyon",
+                    "C": "Toulon"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which Alpine ski resort is famous for its winter sports and luxury hotels?",
+                "options": {
+                    "A": "Val d'Isère",
+                    "B": "Grenoble",
+                    "C": "Lloret de Mar"
+                },
+                "answer": "A"
+            },
+            {
+                "question": "Which Alpine town is known for its traditional markets and ancient architecture?",
+                "options": {
+                    "A": "Megève",
+                    "B": "Cortina",
+                    "C": "Roca Bri"
+                },
+                "answer": "A"
+            }
+        ]
+    }
+}

@@ -1,5 +1,6 @@
 import 'package:plen_air_app/provider/game_provider.dart';
 import 'package:plen_air_app/screens/menu/menu_widget.dart';
+import 'package:plen_air_app/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -43,108 +44,22 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
         backgroundColor: const Color(0xFF0B0B0B),
         body: SafeArea(
           top: true,
-          child: Stack(
-            children: [
-              Stack(
+          child: Center(
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              width: screenWidth,
+              decoration: BoxDecoration(
+                color: const Color(0xFF1A1A1A),
+                borderRadius: BorderRadius.circular(28),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Align(
-                    alignment: const AlignmentDirectional(0, 0),
-                    child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(27, 0, 27, 0),
-                      child: Container(
-                        width: 376,
-                        height: 418,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF1A1A1A),
-                          borderRadius: BorderRadius.circular(28),
-                        ),
-                        alignment: const AlignmentDirectional(0, 0),
-                        child: Stack(
-                          children: [
-                            Stack(
-                              children: [
-                                Align(
-                                  alignment: const AlignmentDirectional(0, -1),
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            const AlignmentDirectional(0, 0),
-                                        child: Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0, 0, 110, 40),
-                                          child: Text(
-                                            '+100',
-                                            style: FlutterFlowTheme.of(context)
-                                                .displaySmall
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  letterSpacing: 3,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Align(
-                                  alignment: const AlignmentDirectional(0, 0),
-                                  child: Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            150, 0, 30, 30),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
-                                      child: Image.asset(
-                                        'assets/images/Umbrella.png',
-                                        width: 102.87,
-                                        height: 100,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  290, 15, 0, 0),
-                              child: GestureDetector(
-                                onTap: () async {
-                                  final provider = Provider.of<GameProvider>(
-                                      context,
-                                      listen: false);
-                                  provider.addCoins(100);
-                                  await Navigator.of(context).pushReplacement(
-                                    MaterialPageRoute(
-                                      builder: (context) => const Menu1Widget(),
-                                    ),
-                                  );
-                                },
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: Image.asset(
-                                    'assets/images/Close_Button.png',
-                                    width: 31.11,
-                                    height: 31.11,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: const AlignmentDirectional(0, 0),
-                    child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(53, 320, 53, 0),
-                      child: GestureDetector(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
                         onTap: () async {
                           final provider =
                               Provider.of<GameProvider>(context, listen: false);
@@ -155,63 +70,94 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             ),
                           );
                         },
-                        child: Container(
-                          width: 324,
-                          height: 76,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF423F3F),
-                            borderRadius: BorderRadius.circular(28),
-                          ),
-                          child: Align(
-                            alignment: const AlignmentDirectional(0, 0),
-                            child: Text(
-                              'Collect the reward',
-                              style: FlutterFlowTheme.of(context)
-                                  .labelLarge
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                            ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            'assets/images/Close_Button.png',
+                            width: 31.11,
+                            height: 31.11,
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                  Align(
-                    alignment: const AlignmentDirectional(0, 0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Align(
-                          alignment: const AlignmentDirectional(0, 0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                0, 280, 0, 0),
-                            child: Text(
-                              'Your daily reward!',
-                              textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context)
-                                  .headlineLarge
-                                  .override(
-                                    fontFamily: 'Outfit',
-                                    color: Colors.white,
-                                    fontSize: 28,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                            ),
-                          ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Your daily reward!',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).headlineLarge.override(
+                          fontFamily: 'Outfit',
+                          color: Colors.white,
+                          fontSize: 28,
+                          letterSpacing: 0.0,
+                          fontWeight: FontWeight.w500,
                         ),
-                      ],
+                  ),
+                  const SizedBox(height: 30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "+100",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 24,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Image.asset(
+                          'assets/images/Umbrella.png',
+                          width: 75,
+                          height: 75,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 15),
+                  GestureDetector(
+                    onTap: () async {
+                      final provider =
+                          Provider.of<GameProvider>(context, listen: false);
+                      provider.addCoins(100);
+                      await Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) => const Menu1Widget(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(vertical: 15),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF423F3F),
+                        borderRadius: BorderRadius.circular(28),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Collect the reward',
+                            style: FlutterFlowTheme.of(context)
+                                .labelLarge
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
-            ],
+            ),
           ),
         ),
       ),

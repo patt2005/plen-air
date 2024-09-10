@@ -36,53 +36,47 @@ class _EasyWidgetState extends State<EasyWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Scaffold(
-        key: scaffoldKey,
-        backgroundColor: const Color(0xFF0B0B0B),
-        body: SafeArea(
-          top: true,
-          child: Stack(
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: const Color(0xFF0B0B0B),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Column(
             children: [
-              const BottomNavigation(),
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(17, 0, 17, 0),
-                child: FFButtonWidget(
-                  onPressed: () {},
-                  text: 'Easy',
-                  options: FFButtonOptions(
-                    width: 396,
-                    height: 81,
-                    padding: const EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-                    color: const Color(0xFF303030),
-                    textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
-                          color: Colors.white,
-                          fontSize: 26,
-                          letterSpacing: 0.0,
-                        ),
-                    elevation: 3,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 1,
-                    ),
-                    borderRadius: BorderRadius.circular(13),
+              const SizedBox(height: 10),
+              FFButtonWidget(
+                onPressed: () {},
+                text: 'Easy',
+                options: FFButtonOptions(
+                  width: screenWidth,
+                  padding: EdgeInsetsDirectional.symmetric(
+                      vertical: screenHeight * 0.02),
+                  color: const Color(0xFF303030),
+                  textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Readex Pro',
+                        color: Colors.white,
+                        fontSize: 26,
+                        letterSpacing: 0.0,
+                      ),
+                  elevation: 3,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1,
                   ),
+                  borderRadius: BorderRadius.circular(13),
                 ),
               ),
-              Container(
-                margin: const EdgeInsets.only(top: 100),
-                height: MediaQuery.of(context).size.height * 0.7,
+              const SizedBox(height: 10),
+              Expanded(
                 child: ListView.builder(
                   itemCount: easyModeQuizCategories.length,
                   itemBuilder: (context, index) {
                     return Center(
                       child: GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
+                        onTap: () async {
+                          await Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(
                             builder: (context) => QuizWidget(
                               categoryId: easyModeQuizCategories[index],
                               categoryIndex: index,
@@ -130,6 +124,7 @@ class _EasyWidgetState extends State<EasyWidget> {
                   },
                 ),
               ),
+              const BottomNavigation(),
             ],
           ),
         ),

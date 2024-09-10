@@ -96,31 +96,37 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
             )
           : SafeArea(
               top: true,
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: const AlignmentDirectional(0, 0),
-                    child: Stack(
-                      children: [
-                        const BottomNavigation(),
-                        Align(
-                          alignment: const AlignmentDirectional(0.83, -0.4),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                17, 0, 17, 15),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Column(
+                  children: [
+                    SizedBox(height: screenHeight * 0.1),
+                    Text(
+                      'Beautiful France',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Readex Pro',
+                            color: Colors.white,
+                            fontSize: 26,
+                            letterSpacing: 0.0,
+                          ),
+                    ),
+                    SizedBox(height: screenHeight * 0.05),
+                    SizedBox(
+                      height: screenHeight * 0.1,
+                      child: Row(
+                        children: [
+                          Expanded(
                             child: Container(
-                              width: 129,
-                              height: 73,
+                              padding: const EdgeInsets.all(13),
                               decoration: BoxDecoration(
                                 color: const Color(0xFF303030),
                                 borderRadius: BorderRadius.circular(13),
                               ),
-                              child: Align(
-                                alignment: const AlignmentDirectional(0, 0),
-                                child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 55, 0),
-                                  child: Text(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
                                     '10',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -132,19 +138,24 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
                                           fontWeight: FontWeight.w500,
                                         ),
                                   ),
-                                ),
+                                  const SizedBox(width: 10),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: Image.asset(
+                                      'assets/images/Umbrella.png',
+                                      width: 53.49,
+                                      height: 52,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(-0.86, -0.42),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                17, 0, 17, 0),
+                          const SizedBox(width: 10),
+                          Expanded(
                             child: Container(
-                              width: 129,
-                              height: 73,
+                              padding: const EdgeInsets.all(13),
                               decoration: BoxDecoration(
                                 color: const Color(0xFF303030),
                                 borderRadius: BorderRadius.circular(13),
@@ -166,12 +177,26 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
                               ),
                             ),
                           ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(-1.09, 0.28),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                32, 0, 32, 0),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: screenHeight * 0.03),
+                    Text(
+                      _questions[_currentQuestionIndex].question,
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Readex Pro',
+                            color: Colors.white,
+                            fontSize: 26,
+                            letterSpacing: 0.0,
+                          ),
+                    ),
+                    SizedBox(height: screenHeight * 0.05),
+                    SizedBox(
+                      height: screenHeight * 0.12,
+                      child: Row(
+                        children: [
+                          Expanded(
                             child: GestureDetector(
                               onTap: () async {
                                 setState(() {
@@ -202,8 +227,6 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
                                 });
                               },
                               child: Container(
-                                width: 139,
-                                height: 81,
                                 decoration: BoxDecoration(
                                   color: const Color(0xFF303030),
                                   borderRadius: BorderRadius.circular(13),
@@ -225,6 +248,68 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: Colors.white,
+                                          fontSize: 23,
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 15),
+                          Expanded(
+                            child: GestureDetector(
+                              onTap: () async {
+                                setState(() {
+                                  _selectedOptionIndex = 1;
+                                  _isCorrect = _questions[_currentQuestionIndex]
+                                          .answer ==
+                                      true;
+                                  if (_isCorrect) {
+                                    _answeredQuestions++;
+                                    _totalCoins += 10;
+                                  }
+                                });
+                                await Future.delayed(
+                                    const Duration(seconds: 2));
+                                if (_currentQuestionIndex + 1 >=
+                                    _questions.length) {
+                                  await Navigator.of(context)
+                                      .pushReplacement(MaterialPageRoute(
+                                    builder: (context) => StoryWidget(
+                                      answeredQuestions: _answeredQuestions,
+                                    ),
+                                  ));
+                                  debugPrint("Finish");
+                                }
+                                setState(() {
+                                  _isCorrect = false;
+                                  _currentQuestionIndex++;
+                                  _selectedOptionIndex = null;
+                                });
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF303030),
+                                  borderRadius: BorderRadius.circular(13),
+                                  border: Border.all(
+                                    color: _selectedOptionIndex == 1
+                                        ? _isCorrect
+                                            ? const Color(0xFFFF1212)
+                                            : const Color(0xFF24FF00)
+                                        : Colors.transparent,
+                                  ),
+                                ),
+                                child: Align(
+                                  alignment: const AlignmentDirectional(0, 0),
+                                  child: Text(
+                                    'False',
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          color: Colors.white,
                                           fontSize: 26,
                                           letterSpacing: 0.0,
                                         ),
@@ -233,122 +318,13 @@ class _EverydayQuizWidgetState extends State<EverydayQuizWidget> {
                               ),
                             ),
                           ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(0.76, -0.37),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                0, 0, 10, 55),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.asset(
-                                'assets/images/Umbrella.png',
-                                width: 53.49,
-                                height: 52,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(-0.05, -0.09),
-                          child: Text(
-                            _questions[_currentQuestionIndex].question,
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                  fontSize: 26,
-                                  letterSpacing: 0.0,
-                                ),
-                          ),
-                        ),
-                        Align(
-                          alignment: const AlignmentDirectional(0.01, -0.78),
-                          child: Text(
-                            'Beautiful France',
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                  fontSize: 26,
-                                  letterSpacing: 0.0,
-                                ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Align(
-                    alignment: const AlignmentDirectional(1.12, 0.28),
-                    child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(32, 0, 32, 0),
-                      child: GestureDetector(
-                        onTap: () async {
-                          setState(() {
-                            _selectedOptionIndex = 1;
-                            _isCorrect =
-                                _questions[_currentQuestionIndex].answer ==
-                                    true;
-                            if (_isCorrect) {
-                              _answeredQuestions++;
-                              _totalCoins += 10;
-                            }
-                          });
-                          await Future.delayed(const Duration(seconds: 2));
-                          if (_currentQuestionIndex + 1 >= _questions.length) {
-                            // await Navigator.of(context)
-                            //     .pushReplacement(MaterialPageRoute(
-                            //   builder: (context) => StoryWidget(
-                            //     answeredQuestions: _answeredQuestions,
-                            //   ),
-                            // ));
-                            debugPrint("Finish");
-                          }
-                          setState(() {
-                            _isCorrect = false;
-                            _currentQuestionIndex++;
-                            _selectedOptionIndex = null;
-                          });
-                        },
-                        child: Container(
-                          width: 149,
-                          height: 82,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF303030),
-                            borderRadius: BorderRadius.circular(13),
-                            border: Border.all(
-                              color: _selectedOptionIndex == 1
-                                  ? _isCorrect
-                                      ? const Color(0xFFFF1212)
-                                      : const Color(0xFF24FF00)
-                                  : Colors.transparent,
-                            ),
-                          ),
-                          child: Align(
-                            alignment: const AlignmentDirectional(0, 0),
-                            child: Text(
-                              'False',
-                              textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    color: Colors.white,
-                                    fontSize: 26,
-                                    letterSpacing: 0.0,
-                                  ),
-                            ),
-                          ),
-                        ),
+                        ],
                       ),
                     ),
-                  ),
-                ],
+                    const Spacer(),
+                    const BottomNavigation(),
+                  ],
+                ),
               ),
             ),
     );

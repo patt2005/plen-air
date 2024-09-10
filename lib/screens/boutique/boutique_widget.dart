@@ -1,3 +1,4 @@
+import 'package:plen_air_app/utils/utils.dart';
 import 'package:plen_air_app/widgets/bottom_navigation.dart';
 
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -41,79 +42,69 @@ class _BoutiqueWidgetState extends State<BoutiqueWidget> {
         backgroundColor: const Color(0xFF0B0B0B),
         body: SafeArea(
           top: true,
-          child: Stack(
+          child: Column(
             children: [
-              Stack(
-                children: [
-                  Stack(
-                    children: [
-                      Align(
-                        alignment: const AlignmentDirectional(-0.05, -1.04),
-                        child: Text(
-                          'Store',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
-                                    color: Colors.white,
-                                    fontSize: 26,
-                                    letterSpacing: 0.0,
-                                  ),
+              Text(
+                'Store',
+                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Readex Pro',
+                      color: Colors.white,
+                      fontSize: 26,
+                      letterSpacing: 0.0,
+                    ),
+              ),
+              SizedBox(
+                height: screenHeight * 0.75,
+                child: GridView.builder(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 15,
+                  ),
+                  padding: const EdgeInsets.only(bottom: 100),
+                  itemCount: 8,
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        Image.asset(
+                          "assets/images/boutique/$index.png",
+                          width: 120,
+                          height: 120,
                         ),
-                      ),
-                      GridView.builder(
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          mainAxisSpacing: 15,
-                        ),
-                        padding: const EdgeInsets.only(bottom: 100),
-                        itemCount: 8,
-                        itemBuilder: (context, index) {
-                          return Column(
+                        const SizedBox(height: 7),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 7, vertical: 7),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF303030),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          width: 125,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Image.asset(
-                                "assets/images/boutique/$index.png",
-                                width: 120,
-                                height: 120,
+                              const Text(
+                                "200",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
                               ),
-                              const SizedBox(height: 7),
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 7, vertical: 7),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF303030),
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                width: 125,
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    const Text(
-                                      "200",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                                    Image.asset(
-                                      "assets/images/Umbrella.png",
-                                      width: 45,
-                                      height: 45,
-                                    ),
-                                  ],
-                                ),
+                              Image.asset(
+                                "assets/images/Umbrella.png",
+                                width: 45,
+                                height: 45,
                               ),
                             ],
-                          );
-                        },
-                      ),
-                      const BottomNavigation(),
-                    ],
-                  ),
-                ],
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                ),
               ),
+              const Spacer(),
+              const BottomNavigation(),
             ],
           ),
         ),

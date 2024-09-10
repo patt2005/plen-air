@@ -12,12 +12,11 @@ class InfoWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF0B0B0B),
       body: SafeArea(
-        child: Stack(
+        child: Column(
           children: [
-            Positioned(
-              top: 10,
-              left: 0,
-              right: 0,
+            // Title at the top
+            Padding(
+              padding: const EdgeInsets.all(16.0),
               child: Text(
                 title,
                 textAlign: TextAlign.center,
@@ -28,27 +27,19 @@ class InfoWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              top: 60,
-              left: 0,
-              right: 0,
-              child: SizedBox(
-                height: MediaQuery.of(context).size.height * 0.75,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: ListView(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    children: [
-                      Text(
-                        text,
-                        style:
-                            const TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                    ],
-                  ),
+            const SizedBox(height: 10),
+
+            // Expanded text that scrolls if it's too long
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Text(
+                  text,
+                  style: const TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ),
             ),
+            // Bottom Navigation remains at the bottom
             const BottomNavigation(),
           ],
         ),

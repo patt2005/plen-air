@@ -35,87 +35,81 @@ class _InterestWidgetState extends State<InterestWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Scaffold(
-        key: scaffoldKey,
-        backgroundColor: const Color(0xFF0B0B0B),
-        body: SafeArea(
-          top: true,
-          child: Stack(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(top: 20, right: 10, left: 10),
-                child: Text(
-                  'The picturesque places in France',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Readex Pro',
-                        color: Colors.white,
-                        fontSize: 26,
-                        letterSpacing: 0.0,
-                      ),
-                ),
-              ),
-              const BottomNavigation(),
-              Container(
-                margin: const EdgeInsets.only(top: 100),
-                height: MediaQuery.of(context).size.height * 0.7,
-                child: ListView.builder(
-                  itemCount: easyModeQuizCategories.length,
-                  itemBuilder: (context, index) {
-                    return Center(
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => StateWidget(
-                              categoryIndex: index,
-                            ),
-                          ));
-                        },
-                        child: Container(
-                          margin: const EdgeInsets.only(bottom: 15),
-                          child: Stack(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(14),
-                                child: Image.asset(
-                                  "assets/images/easy_quiz/$index.png",
-                                  width: 362,
-                                  height: 110,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Positioned(
-                                bottom: 0,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      easyModeQuizCategories[index],
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: Colors.white,
-                                            fontSize: 26,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: const Color(0xFF0B0B0B),
+      body: SafeArea(
+        top: true,
+        child: Column(
+          children: [
+            const SizedBox(height: 10),
+            Text(
+              'The picturesque places in France',
+              textAlign: TextAlign.center,
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: 'Readex Pro',
+                    color: Colors.white,
+                    fontSize: 26,
+                    letterSpacing: 0.0,
+                  ),
+            ),
+            const SizedBox(height: 10),
+            Expanded(
+              child: ListView.builder(
+                itemCount: easyModeQuizCategories.length,
+                itemBuilder: (context, index) {
+                  return Center(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => StateWidget(
+                            categoryIndex: index,
                           ),
+                        ));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Image.asset(
+                                "assets/images/easy_quiz/$index.png",
+                                width: 362,
+                                height: 110,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Positioned(
+                              bottom: 0,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    easyModeQuizCategories[index],
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          color: Colors.white,
+                                          fontSize: 26,
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    );
-                  },
-                ),
+                    ),
+                  );
+                },
               ),
-            ],
-          ),
+            ),
+            const BottomNavigation(),
+          ],
         ),
       ),
     );

@@ -1,5 +1,8 @@
 double musicVolume = 0.5;
 
+late double screenWidth;
+late double screenHeight;
+
 List<String> easyModeQuizCategories = [
   "Mont-Saint-Michel",
   "Massif du Vaucluse",
